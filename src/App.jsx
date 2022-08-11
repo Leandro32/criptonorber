@@ -3,8 +3,6 @@ import Hero from './Hero'
 import CardsCryptoPrices from './Cards/CardsCryptoPrices'
 import About from './About'
 import Articles from './Articles'
-import NavbarHome from './NavbarHome'
-import Footer from './Footer'
 import PortalNoticias from './PortalNoticias'
 import Links from './Links'
 import axios from 'axios'
@@ -26,13 +24,9 @@ export default function App() {
   },[])
 
   return <>
-      <Hero></Hero>
-      <CardsCryptoPrices coins={coins}></CardsCryptoPrices>
-      <About></About>
-      <Articles></Articles>
-    {/*
-    */}
-      <PortalNoticias></PortalNoticias>
+      <Hero/>
+      <CardsCryptoPrices coins={coins}/>
+      <About/>
       <Links/>
     </>
 }
