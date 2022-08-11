@@ -6,7 +6,7 @@ function CardsCryptoPrices({coins}) {
   console.log("props CardsCryptoPrices",coins)
 
   return (
-    <div className='flex orange-bg h-32 py-3'>
+    <div className='flex orange-bg py-3'>
       {coins.map(coin => (
         <Card 
           name={coin.name}

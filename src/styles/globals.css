@@ -112,6 +112,7 @@ p {
   width: 235px;
   border-radius: 1rem;
   margin: 0 2rem;
+  height: 3rem;
 }
 .card-img {
   display: grid;
