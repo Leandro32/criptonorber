@@ -2,17 +2,17 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <div className='w-100 h-100 darkblue-bg'>
+    <div className='w-100 h-100 blue-bg'>
       <div className='container flex gap-4 py-20'>
         <div className='flex flex-col justify-center'>
-          <h1 className='text-orange-400 font-semibold text-2xl pb-3'>¡Aprendamos juntos!</h1>
+          <h1 className='text-orange-400 font-semibold text-3xl pb-2 subpixel-antialiased'>¡Aprendamos juntos!</h1>
           <p className='text-hero'>Comparto mi conocimiento en cripto en redes sociales para toda mi comunidad, te recomiendo que me sigas para estar enterado de todo lo que pasa en el mundo de blockchain y criptomonedas</p>
           <div className='container-botones'>
             <button className='btn-hero'>
-              <span>Informate</span>
+              <span className="font-bold">Informate</span>
               </button>
             <button className='btn-hero'>
-              <span>Aprendé</span>
+              <span className="font-bold">Aprendé</span>
             </button>
           </div>
         </div>

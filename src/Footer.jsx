@@ -4,7 +4,9 @@ import { SocialIcon } from 'react-social-icons'
 
 function Footer() {
   return (
-    <div className='flex justify-around darkblue-bg footer mt-5'>
+    <>
+    <div className="bg-degrade h-10 mt-5"></div>
+    <div className='flex justify-around blue-bg footer'>
       <div className='footer-logo'>
         <img src="/assets/logo white.png" alt="CriptoNorber logo" />
       </div>
@@ -18,6 +20,7 @@ function Footer() {
         <SocialIcon url="https://twitter.com/npgiudice" className='social-icon' fgColor='rgb(235, 235, 235)'/> 
       </div>
     </div>
+    </>
   )
 }
 

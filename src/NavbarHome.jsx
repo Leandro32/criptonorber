@@ -1,29 +1,31 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import { NavLink, Nav } from 'react-bootstrap';
-import {Link, Router} from 'react-router-dom'
+import { NavLink, Nav, NavDropdown } from 'react-bootstrap';
+import { Link, Router } from 'react-router-dom'
 import Head from './Head';
-/* Agregar animacion onscroll para el navbar*/ 
+/* Agregar animacion onscroll para el navbar*/
 function NavbarHome() {
   return (
     <>
-      <Head/>
-      <Navbar className='orange-bg' sticky="top" collapseOnSelect expand="lg">
+      <Head />
+      <Navbar className='orange-bg h-16' sticky="top" collapseOnSelect expand="lg">
         <Container>
           <div className='max-w-xs'>
-            <img
-              className='logo-navbar'
-              src="/assets/logo.png"
-            />
+            <Link to="/">
+              <img
+                className='logo-navbar'
+                src="/assets/logo.png"
+              />
+            </Link>
           </div>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse className='navbar-links'>
             <Nav>
-              <Link className='' to='/'>Redes</Link>
-              <Link className='font-semibold navbar-links text-end' to='/'>Quién soy</Link>
-              <Link className='font-semibold navbar-links text-end' to="/portalnoticias">Notas</Link>
-              <Link className='font-semibold navbar-links text-end' to="/material">Material</Link>
+              <NavDropdown title="Redes" className='font-semibold navbar-links text-end px-3' to='/'>Redes</NavDropdown>
+              <Link className='font-semibold navbar-links text-end px-3' to='#about'>Quién soy</Link>
+              <Link className='font-semibold navbar-links text-end px-3' to="/portalnoticias">Notas</Link>
+              <Link className='font-semibold navbar-links text-end px-3' to="/material">Material</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
