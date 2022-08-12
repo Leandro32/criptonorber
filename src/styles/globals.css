@@ -98,9 +98,6 @@ p {
   color: var(--blue);
 }
 
-
-
-
 /*    HERO SECTION    */
 .text-hero {
   color: var(--white);
@@ -214,6 +211,16 @@ h3 {
 }
 .bg-degrade{
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, var(--blue) 100%);
+}
+
+/*    MATERIAL    */
+.list-group-item{
+  background-color: var(--blue)!important;
+  color: var(--white)!important;
+}
+
+.list-group-item:hover{
+  background-color: var(--darkblue)!important;
 }
 
 

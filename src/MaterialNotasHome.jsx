@@ -5,7 +5,7 @@ export default function MaterialNotasHome() {
   return (
     <>
       <div className='flex justify-center mt-5 pb-5 grid-cols-2'>
-        <Link to="/portalnoticias">
+        <Link to="/notas">
           <div className='px-4'>
             <div className='flex justify-center'>
               <img className='img-btn' src="/assets/links/notas.png"></img>

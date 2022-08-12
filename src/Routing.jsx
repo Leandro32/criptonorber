@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import App from './App'
-import PortalNoticias from './PortalNoticias'
+import Notas from './Notas'
 import Material from './Material'
 import Footer from './Footer'
 import NavbarHome from './NavbarHome'
@@ -16,10 +16,10 @@ export default function Routing() {
           <Footer />
         </>
         } />
-      <Route path="/portalnoticias" element={
+      <Route path="/notas" element={
         <>
           <NavbarHome />
-          <PortalNoticias />
+          <Notas />
           <Footer />
         </>} />
       <Route path="/material" element={

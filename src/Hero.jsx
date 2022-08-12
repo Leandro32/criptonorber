@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Hero() {
   return (
@@ -8,12 +9,16 @@ export default function Hero() {
           <h1 className='text-orange-400 font-semibold text-3xl pb-2 subpixel-antialiased'>¡Aprendamos juntos!</h1>
           <p className='text-hero'>Comparto mi conocimiento en cripto en redes sociales para toda mi comunidad, te recomiendo que me sigas para estar enterado de todo lo que pasa en el mundo de blockchain y criptomonedas</p>
           <div className='container-botones'>
+            <Link to="/notas">
             <button className='btn-hero'>
               <span className="font-bold">Informate</span>
               </button>
+            </Link>
+            <Link to="/material">
             <button className='btn-hero'>
               <span className="font-bold">Aprendé</span>
             </button>
+            </Link>
           </div>
         </div>
         <div>
